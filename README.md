@@ -7,9 +7,11 @@ PyTorch code of the paper "Adaptive Offline Quintuplet Loss for Image-Text Match
 Existing image-text matching approaches typically leverage triplet loss with online hard negatives to train the model. For each image or text anchor in a training mini-batch, the model is trained to distinguish between a positive and the most confusing negative of the anchor mined from the mini-batch (i.e. online hard negative). This strategy improves the model's capacity to discover fine-grained correspondences and non-correspondences between image and text inputs. However, the above training approach has the following drawbacks: (1) the negative selection strategy still provides limited chances for the model to learn from very hard-to-distinguish cases. (2) The trained model has weak generalization capability from the training set to the testing set. (3) The penalty lacks hierarchy and adaptiveness for hard negatives with different “hardness” degrees. In this paper, we propose solutions by sampling negatives offline from the whole training set. It provides “harder” offline negatives than online hard negatives for the model to distinguish. Based on the offline hard negatives, a quintuplet loss is proposed to improve the model's generalization capability to distinguish positives and negatives. In addition, a novel loss function that combines the knowledge of positives, offline hard negatives and online hard negatives is created. It leverages offline hard negatives as intermediary to adaptively penalize them based on their distance relations to the anchor. We evaluate the proposed training approach on three state-of-the-art image-text models on the MS-COCO and Flickr30K datasets. Significant performance improvements are observed for all the models, demonstrating the effectiveness and generality of the proposed approach. 
 
 ![model](/fig/model.png)
-##Performance on MSCOCO 
+
+Performance on MSCOCO 
 ![model](/fig/coco.png)
-##Performance on Flickr30K 
+
+Performance on Flickr30K 
 ![model](/fig/f30k.png)
 
 ## Requirements 
