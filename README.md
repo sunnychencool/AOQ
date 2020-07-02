@@ -1,5 +1,5 @@
 # Adaptive Offline Quintuplet Loss for Image-Text Matching (AOQ)
-PyTorch code of the paper "Adaptive Offline Quintuplet Loss for Image-Text Matching". It is built on top of [VSRN](https://github.com/KunpengLi1994/VSRN) and [BFAN](https://github.com/CrossmodalGroup/BFAN).
+PyTorch code of the paper "Adaptive Offline Quintuplet Loss for Image-Text Matching" accepted by ECCV 2020. It is built on top of [VSRN](https://github.com/KunpengLi1994/VSRN) and [BFAN](https://github.com/CrossmodalGroup/BFAN).
 
 [Tianlang Chen](https://www.cs.rochester.edu/u/tchen45/), Jiajun Deng and [Jiebo Luo](https://www.cs.rochester.edu/u/jluo/). "Adaptive Offline Quintuplet Loss for Image-Text Matching", arxiv, 2020. [[pdf](https://arxiv.org/pdf/2003.03669.pdf)]
 
